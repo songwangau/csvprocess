@@ -1,6 +1,6 @@
 <?php
 define('DB_SERVER', 'localhost');
-define('DB_SERVER_USERNAME', 'csv_p');
-define('DB_SERVER_PASSWORD', 'csv_p');
-define('DB_DATABASE', 'csv_p');
+define('DB_SERVER_USERNAME', 'root');
+define('DB_SERVER_PASSWORD', 'root');
+define('DB_DATABASE', 'csv_p_db');
 ?>
