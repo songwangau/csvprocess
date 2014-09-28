@@ -48,12 +48,10 @@ class MysqlProc{
 	}
 
 	public function addUser($user_name, $surname, $email) {
-		$this->getConnection();
-
-
+		//$this->getConnection();
 		$sql_str = "INSERT INTO users (user_name, surname, email) VALUES ('".$user_name."','".$surname."','".$email."')";
-
-		$this->tep_db_query($sql_str);
+		echo $sql_str."\n";
+		//$this->tep_db_query($sql_str);
 	}
 
 }

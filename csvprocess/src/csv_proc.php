@@ -3,11 +3,13 @@ require ('mysql_proc.php');
 $dao = new MysqlProc();
 
 $file = fopen("users.csv","r");
-
+//fgetcsv($file);
 while(! feof($file))
 {
 	$arr = fgetcsv($file);
-	$dao->addUser(capfirst($arr[0]),capfirst($arr[1]),emailValidate($arr[2]));
+	//die(capfirst($arr[0]));
+	//var_dump($arr);
+	$dao->addUser(capfirst($arr[0]),capfirst($arr[1]),$arr[2]);
 }
 
 fclose($file);
